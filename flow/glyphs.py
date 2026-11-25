@@ -1,0 +1,43 @@
+"""SVG path data for the small UI glyphs (play, pause, gear...). Exposed to QML as `IconPaths`."""
+from __future__ import annotations
+
+ICONS = {
+    "play": {"fill": "M7 4.5v15L19.5 12z"},
+    "pause": {"fill": "M6.5 4.5h4v15h-4z M13.5 4.5h4v15h-4z"},
+    "prev": {"fill": "M6 5h2v14H6z M19 5v14L9 12z"},
+    "next": {"fill": "M16 5h2v14h-2z M5 5v14l10-7z"},
+    "back": {"fill": "M20 6v12l-8-6z M12 6v12l-8-6z"},
+    "fwd": {"fill": "M4 6v12l8-6z M12 6v12l8-6z"},
+    "plus": {"stroke": "M12 5v14 M5 12h14"},
+    "dots": {"fill": "M5 10.5a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3z "
+                     "M12 10.5a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3z "
+                     "M19 10.5a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3z"},
+    "vol0": {"fill": "M3.5 9.5v5h3.5l4.5 4v-13l-4.5 4z", "stroke": "M15.5 9.5l5 5 M20.5 9.5l-5 5"},
+    "vol1": {"fill": "M3.5 9.5v5h3.5l4.5 4v-13l-4.5 4z", "stroke": "M15.5 9.5a3.5 3.5 0 0 1 0 5"},
+    "vol2": {"fill": "M3.5 9.5v5h3.5l4.5 4v-13l-4.5 4z",
+             "stroke": "M15.5 9.5a3.5 3.5 0 0 1 0 5 M18.2 7a7 7 0 0 1 0 10"},
+    "vol3": {"fill": "M3.5 9.5v5h3.5l4.5 4v-13l-4.5 4z",
+             "stroke": "M15.5 9.5a3.5 3.5 0 0 1 0 5 M18.2 7a7 7 0 0 1 0 10 M20.8 4.5a10.5 10.5 0 0 1 0 15"},
+    "fullscreen": {"stroke": "M4 9V4h5 M20 9V4h-5 M4 15v5h5 M20 15v5h-5"},
+    "exitfs": {"stroke": "M9 4v5H4 M15 4v5h5 M9 20v-5H4 M15 20v-5h5"},
+    "audio": {"stroke": "M4 10v4 M8 7v10 M12 4v16 M16 8v8 M20 10v4"},
+    "subtitle": {"stroke": "M4 6h16v12H4z M7.5 11h3 M13.5 11h3 M7.5 14.5h9"},
+    "speed": {"stroke": "M4 17a8 8 0 0 1 16 0 M12 17l3.5-5"},
+    "list": {"stroke": "M9 6h11 M9 12h11 M9 18h11 M4.5 6h.01 M4.5 12h.01 M4.5 18h.01"},
+    "open": {"stroke": "M3.5 7.5a2 2 0 0 1 2-2h4l2 2.5h7a2 2 0 0 1 2 2v7.5a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"},
+    "repeat": {"stroke": "M17 3l3 3-3 3 M4 11V9.5A3.5 3.5 0 0 1 7.5 6H20 M7 21l-3-3 3-3 M20 13v1.5a3.5 3.5 0 0 1-3.5 3.5H4"},
+    "shuffle": {"stroke": "M16 4h4v4 M4 20L20 4 M20 16v4h-4 M14.5 14.5L20 20 M4 4l5 5"},
+    "close": {"stroke": "M7 7l10 10 M17 7L7 17"},
+    "chevleft": {"stroke": "M14.5 5.5L8 12l6.5 6.5"},
+    "minus": {"stroke": "M6.5 12h11"},
+    "zoom": {"stroke": "M18 6l-4.5 4.5 M14 6h4v4 M6 18l4.5-4.5 M10 18H6v-4"},
+    "unzoom": {"stroke": "M14 10l4-4 M14 6v4h4 M10 14l-4 4 M10 18v-4H6"},
+    "check": {"stroke": "M5 12.5l4.5 4.5L19 7.5"},
+    "tree": {"stroke": "M6 4v15 M6 8h5 M6 15h5 M11 5.5h8v5h-8z M11 12.5h8v5h-8z"},
+    "warn": {"stroke": "M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0-18z M12 8v5 M12 16h.01"},
+    "film": {"stroke": "M4 5h16v14H4z M8 5v14 M16 5v14 M4 9.5h4 M4 14.5h4 M16 9.5h4 M16 14.5h4"},
+    "music": {"stroke": "M9 18V6l10-2v12 M9 18a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0z M19 16a2.5 2.5 0 1 1-5 0a2.5 2.5 0 0 1 5 0z"},
+    "pin": {"stroke": "M9 4h6 M10 4v6l-3.5 4h11L14 10V4 M12 14v6"},
+    "sliders": {"stroke": "M4 7h10 M18 7h2 M4 17h2 M10 17h10 M16 4v6 M8 14v6"},
+    "gear": {"stroke": "M9.87 5.02 L10.33 2.55 L13.67 2.55 L14.13 5.02 L15.43 5.55 L17.51 4.14 L19.86 6.49 L18.45 8.57 L18.98 9.87 L21.45 10.33 L21.45 13.67 L18.98 14.13 L18.45 15.43 L19.86 17.51 L17.51 19.86 L15.43 18.45 L14.13 18.98 L13.67 21.45 L10.33 21.45 L9.87 18.98 L8.57 18.45 L6.49 19.86 L4.14 17.51 L5.55 15.43 L5.02 14.13 L2.55 13.67 L2.55 10.33 L5.02 9.87 L5.55 8.57 L4.14 6.49 L6.49 4.14 L8.57 5.55 Z M15 12a3 3 0 1 0-6 0a3 3 0 1 0 6 0z"},
+}
